@@ -28,12 +28,17 @@ hbs.registerHelper('getCurrentYear',() => {
 
 app.get('/',(req, res) => {
 	res.render('home.hbs',{
-		pageTitle: 'Home'
+		pageTitle: 'Home Pages'
 	});
 });
 app.get('/about',(req, res) => {
 	res.render('about.hbs',{
 		pageTitle: 'About Pages'
+	});
+});
+app.get('/project',(req, res) => {
+	res.render('project.hbs',{
+		pageTitle: 'Project Pages'
 	});
 });
 
